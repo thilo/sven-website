@@ -1,3 +1,10 @@
+@font-face { 
+  font-family: Steiner; 
+  src: url('fonts/steiner.eot'); /* IE */ 
+  src: local('Steiner'), 
+  url('fonts/steiner.ttf'); /*non-IE*/
+} 
+
 * {
     margin: 0;
     padding: 0;
@@ -5,431 +12,67 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #d5d5d5;
-}
-#page {
-    margin: 0;
-    max-width: 100%;
-}
-#primary {
-    margin-top: 0;
-}
-.page #main {
-    margin: 0 auto;
-    max-width: 940px;
-    padding: 10px;
-}
-.home #main, .archive #main, .single-format-gallery #main {
-    width: 100%;
-}
-#content {
-    margin: 0;
-    width: 100%;
-}
-a {
-    outline: medium none;
-}
-html {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-#branding hgroup {
-    margin-bottom: 0;
-    padding: 10px 10px 20px;
-}
-#masthead {
-    float: left;
-    padding: 15px 10px;
-}
-#masthead h1 {
-    margin: 0;
-}
-#logo a {
-    font-size: 16px;
-    text-transform: uppercase;
-}
-#topaccess {
-    padding-top: 15px;
-}
-#access {
-    background-color: transparent;
-    clear: none;
-    float: right;
-    margin: 0 15px 6px;
-    width: auto;
-}
-#access {
-    margin-bottom: 0;
-}
-#access .menu {
-    z-index: 3;
-}
-#access ul {
-    border: medium none !important;
-    clear: left;
-    float: right;
-    position: relative;
-    right: 50%;
-}
-#access ul li {
-    left: 50%;
-}
-#access ul li ul.sub-menu {
-    left: 0;
-    right: auto;
-}
-#access ul li ul.sub-menu li {
-    clear: left;
-    left: auto;
-}
-#access ul li ul.sub-menu li ul.sub-menu {
-    left: 12em;
-    top: -1px;
-}
-a > .sf-sub-indicator {
-    top: 1.1em;
-}
-#access ul li:hover ul, #access ul li.sfHover ul {
-    top: 3em;
-}
-#access select, #access span {
-    display: none;
-}
-#content.sidebar {
-    margin: 0 34% 0 0;
-    width: 70.8333%;
-}
-.home #mainindex {
-    margin: 0;
-}
-#mainholder {
-    clear: both;
-    margin: 0 0 10px;
-    overflow: hidden;
-    position: relative;
-}
-#mainholder.fixwidth {
-    margin: auto auto 10px;
-    width: 960px;
-}
-#holder {
-    margin: 0 auto;
-}
-div.textcontent {
-    clear: both;
-    margin: 0 auto;
-    max-width: 940px;
-    padding: 10px;
-}
-div.textcontent h1 {
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-}
-h2.entry-title, h3.sub {
-    font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 7px;
-    text-transform: uppercase;
-}
-.hentry {
-    margin: 0 0 20px;
-    overflow: hidden;
-}
-.entry-content {
-    margin: auto;
-}
-.singleitem {
-    float: left;
-    position: relative;
-    z-index: 1;
-}
-.singleitem .postlink {
-    bottom: 8px;
-    position: absolute;
-    right: 8px;
-}
-.singleitem div.postlink {
-    cursor: default;
-}
-.singleitem a, .singleitem a:hover {
-    border: medium none;
-}
-#holder .singleitem img {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-span.imgcenter {
-    position: absolute;
-    top: 250px;
-}
-.entry-utility .entry-utility {
-    padding-bottom: 30px;
-}
-.textcontent #commentsbox {
-    max-width: 850px;
-}
-.single-attachment img {
-    margin: 0 auto;
-}
-.single h2.entry-title, .single span.entry-meta, .single .entry-utility {
-    display: block;
-    text-align: center;
-}
-#comments-title {
-    padding-top: 30px;
-}
-#index .ui-slider-handle {
-    background: url("images/handlebg.png") repeat scroll 0 0 transparent;
-    border-radius: 5px 5px 5px 5px;
-    height: 50px;
-    margin: 0 -72px;
-    position: absolute;
-    top: -3px;
-    z-index: 2;
-}
-.start, .end {
-    background: url("images/transparent.png") repeat scroll 0 0 transparent;
-    cursor: pointer;
-    display: block;
-    height: 50px;
-    position: absolute;
-    width: 71px;
-    z-index: 1;
-}
-.start {
-    left: 0;
-}
-#index .ui-state-hover {
-    border-radius: 5px 5px 5px 5px;
-}
-#mainindex {
-    clear: both;
-    overflow: hidden;
-    position: relative;
-}
-#index {
-    background: url("images/transparent.png") repeat scroll 0 0 transparent;
-    cursor: pointer;
-    height: 50px;
-    margin: -60px auto 10px;
-    position: relative;
-}
-#imagediv {
-    height: 50px;
-    margin: 10px auto;
-    position: relative;
-}
-#imagediv img {
-    cursor: pointer;
-    float: left;
-    opacity: 0.8;
-}
-.imgexcerpt {
-    display: none;
-    float: right;
-    font-weight: 100;
-    padding: 10px 20px 15px 15px;
-    width: 296px;
-}
-.imgexcerpt h6 {
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
-a.leftnav, a.rightnav {
-    border: medium none;
-    cursor: pointer;
-    display: block;
-    height: 460px;
-    left: 0;
-    position: absolute;
-    width: 50%;
-}
-a.leftnav {
-    background-image: url("images/arrow.png");
-    background-position: 2% -60%;
-    background-repeat: no-repeat;
-}
-a.rightnav {
-    background-image: url("images/arrow.png");
-    background-position: 98% -60%;
-    background-repeat: no-repeat;
-}
-a.rightnav {
-    left: 50%;
-}
-a.leftnav:hover {
-    background-position: 2% 52%;
-}
-a.rightnav:hover {
-    background-position: 98% 52%;
-}
-.slider-navigation {
-    height: 460px;
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-}
-.navigation {
-    background-position: 0 -41px;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 47px;
-}
-.nav-previous a, .nav-next a {
-    border: medium none;
-    display: block;
-    height: 20px;
-    padding: 0;
-    text-indent: -99999em !important;
-    width: 21px;
-}
-.nav-previous a:hover, .nav-next a:hover {
-    background-color: transparent;
-    border: medium none;
-}
-.nav-previous {
-    float: right;
-}
-.nav-next {
-    float: left;
-}
-.nav-previous a {
-    background-position: -26px 0;
-}
-.nav-previous a:hover {
-    background-position: -26px -20px;
-}
-.nav-next a {
-    background-position: 0 0;
-}
-.nav-next a:hover {
-    background-position: 0 -20px;
-}
-.single .navigation {
-    margin-top: 20px;
-}
-.search h2.entry-title {
-    padding-top: 20px;
-}
-a.imglink, div.imglink {
-    bottom: 0;
-    cursor: pointer;
-    float: right;
-    height: 40px;
-    left: 0;
-    position: absolute;
-    text-indent: -999999em;
-    width: 100%;
-    z-index: 3;
-}
-a.imglink {
-    background: url("images/link.png") no-repeat scroll 99% 8px transparent;
-}
-a.imglink:hover {
-    background-position: 99% -28px;
-}
-div.imglink {
-    background: url("images/i.png") no-repeat scroll 99% 8px transparent;
-}
-div.imglink:hover {
-    background-position: 99% -28px;
-}
-div.linkurl {
-    bottom: 3px;
-    position: absolute;
-    right: 37px;
-    z-index: 5;
-}
-div.linkurl a {
-    background: url("images/download.png") no-repeat scroll 99% 8px transparent;
-    color: #FFFFFF;
-    display: block;
-    font-size: 23px;
-    text-indent: -99999px;
-    width: 24px;
-}
-div.linkurl a:hover {
-    background-position: 99% -28px;
-}
-#commentsbox {
-    margin: 0 auto;
-    max-width: 940px;
-    padding: 10px;
-}
-#commentform {
-    position: relative;
-}
-#commentform input {
-    display: block;
-    padding: 3px;
-}
-#commentform p {
-    margin: 10px 0 0;
-}
-#footer {
-    margin: 30px 0 0;
-    text-align: center;
-}
-#footer p {
-    margin: 0 15px 20px;
-}
-.copytext {
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
-}
-#footer h3.sub {
-    text-align: center;
-}
-#footer ul {
-    list-style: none outside none;
-    padding: 0;
-}
-#footer-widgets {
-    padding: 0 2%;
-    text-align: center;
-}
-#access div > ul, #access .menu {
-    display: none;
-}
-#access {
-    background-color: transparent;
-    float: right;
-    position: relative;
-}
-#access select {
-    display: block;
-    height: 26px !important;
-    line-height: 26px;
-    margin-left: 10px;
-    margin-top: 8px;
-    position: relative;
-    width: 140px !important;
-    z-index: 10;
-}
-#access span {
-    background: url("images/select.png") no-repeat scroll 100% 0 #ECECEC;
-    border: 1px solid #D4D4D4;
-    border-radius: 0.2em 0.2em 0.2em 0.2em;
-    bottom: 0;
-    cursor: default;
-    display: block;
-    float: left;
-    font-size: 0.8em;
-    height: 26px;
-    left: 0;
-    line-height: 26px;
-    position: absolute;
-    text-indent: 10px;
-    text-shadow: 1px 1px 0 #FFFFFF;
-    width: 140px;
-    z-index: 1;
-}
-#mainholder {
-    height: 300px;
-}
-.slider-navigation, a.leftnav, a.rightnav {
-    height: 260px;
+    background-color: #D5D5D5;
+    color: #675F5C;
+}
+#makeMeScrollable div.scrollableArea *
+{
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+#header
+{
+  height: 87px;
+}
+
+#logo
+{
+  margin-top: 24px;
+  height: 32px;
+  float: left;
+}
+
+#logo img{
+  margin-left: 24px;
+}
+
+#thumbs {
+  position: relative;
+  float: left;
+  left: 480px;
+  margin-top: 20px;
+}
+
+#thumbs .thumb {
+  border: 1px solid #675F5C;
+  float: left;
+  margin-right: 8px;
+  width: 56px;
+  height: 56px;
+}
+
+#nav{
+  margin-left: 24px;
+}
+
+#nav li{
+  font-family: 'Steiner', sans-serif;
+  float: left;
+  list-style: none;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+#nav a {
+  color: #675F5C;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  
+  text-decoration: underline;
 }

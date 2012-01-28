@@ -4,12 +4,37 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/css/slideshow.css" type="text/css" media="screen"/>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
     <link href="/feed/atom/" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
   
 
   </head>
   <body>
+    <div id="header">
+      <div id="logo">
+        <img src="images/sven-ballenthin.png"></img>
+        <ul id="nav">
+          <li class="nav_item"><a href="#">Work</a></li>
+          <li class="nav_item"><a href="#">About</a></li>
+          <li class="nav_item"><a href="#">News</a></li>
+          <li class="nav_item"><a href="#">CV</a></li>
+          <li class="nav_item"><a href="#">Press</a></li>
+          <li class="nav_item"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div id="thumbs">
+        <div class="thumb">
+          <img src="images/thumbs/placeholder2.png"></img>
+        </div>
+        <div class="thumb">
+          <img src="images/thumbs/placeholder3.png"></img>
+        </div>
+        <div class="thumb">
+          <img src="images/thumbs/placeholder4.png"></img>
+        </div>
+      </div>
+    </div>
     {{ content }}
   </body>
 
@@ -17,6 +42,7 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
   <script type="text/javascript" src="/js/jquery-ui-custom.min.js"></script>
   <script type="text/javascript" src="/js/slideshow.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
   <script type="text/javascript" charset="utf-8">
      $(".contact_link, .close").click(function () {
            $(".extended_nav").slideToggle("normal");
