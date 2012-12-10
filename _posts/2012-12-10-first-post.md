@@ -4,7 +4,7 @@ title: First Post
 type: post
 ---
 
-<img src="/images/sven.jpg" class="inline-image"/>
+<img src="images/sven.jpg" class="inline-image"/>
 
 Cupcake ipsum dolor sit amet topping dessert. Carrot cake cotton candy I love oat cake donut. I love sugar plum tiramisu. Sweet roll bear claw marshmallow marshmallow candy sugar plum sweet jelly beans. Donut oat cake cupcake soufflé chupa chups pie chocolate powder cake. Dessert pastry faworki chocolate cheesecake chocolate croissant wypas. Cheesecake biscuit I love. Lollipop tootsie roll gingerbread sweet roll. Chocolate apple pie I love gummi bears I love halvah. Halvah macaroon cotton candy fruitcake sugar plum tiramisu chocolate candy canes I love.
 
