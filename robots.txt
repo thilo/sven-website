@@ -1,1 +1,3 @@
-Sitemap: http://ballenth.in/sitemap.xml
+User-Agent: *
+Disallow: /
+# Sitemap: http://ballenth.in/sitemap.xml
