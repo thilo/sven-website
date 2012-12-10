@@ -7,17 +7,10 @@ div.scrollingHotSpotLeft
     and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
 	min-width: 75px;
 	width: 10%;
-	height: 100%;
-	/* There is a big background image and it's used to solve some problems I experienced
-    in Internet Explorer 6. */
-	background-image: url(../images/big_transparent.gif);
-	background-repeat: repeat;
-	background-position: center center;
+	height: 690px;
 	position: absolute;
 	z-index: 200;
 	left: 0;
-	/*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
-	cursor: url(../images/cursors/cursor_arrow_left.cur), url(images/cursors/cursor_arrow_left.cur),w-resize;
 }
 
 /* Visible left hotspot */
@@ -37,7 +30,7 @@ div.scrollingHotSpotRight
 {
 	min-width: 75px;
 	width: 10%;
-	height: 100%;
+	height: 690px;
 	position: absolute;
 	z-index: 200;
 	right: 0;
@@ -46,7 +39,7 @@ div.scrollingHotSpotRight
 /* Visible right hotspot */
 div.scrollingHotSpotRightVisible
 {
-	background-image: url(images/arrow.png);
+	background-image: url(images/arrow_right.png);
 	background-color: #fff;
 	background-repeat: no-repeat;
 	opacity: 0.35;
@@ -70,5 +63,5 @@ div.scrollableArea
 {
 	position: relative;
 	width: auto;
-	height: 100%;
+	height: auto;
 }
