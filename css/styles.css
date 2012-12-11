@@ -1,8 +1,8 @@
 @font-face { 
-  font-family: Steiner; 
-  src: url('fonts/steiner.eot'); /* IE */ 
-  src: local('Steiner'), 
-  url('fonts/steiner.ttf'); /*non-IE*/
+  font-family: Bellerose; 
+  src: url('fonts/bellsrose.eot'); /* IE */ 
+  src: local('Bellsrose'), 
+  url('fonts/bellerose.ttf'); /*non-IE*/
 } 
 
 * {
@@ -45,7 +45,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Steiner', sans-serif;
+  font-family: 'Bellerose', sans-serif;
 }
 
 p {
@@ -56,9 +56,12 @@ p {
 
 #logo
 {
-  margin-top: 24px;
-  height: 32px;
-  float: left;
+  font-family: 'Bellerose', sans-serif;
+  font-size: 32px;
+  margin-left: 24px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .inline-image{
@@ -67,9 +70,6 @@ p {
   margin-bottom: 8px;
 }
 
-#logo img{
-  margin-left: 24px;
-}
 .nav{
   margin-left: 24px;
 }
@@ -86,11 +86,11 @@ p {
 }
 
 .nav li{
-  font-family: 'Steiner', sans-serif;
+  font-family: 'Bellerose', sans-serif;
   float: left;
   list-style: none;
   margin-right: 8px;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .nav a {
@@ -104,14 +104,14 @@ p {
 
 #subnav {
   position: absolute;
-  top: 46px;
+  top: 40px;
   right: 24px;
   float: right;
 }
 
 #main-nav{
   position: absolute;
-  top: 60px;
+  top: 40px;
 }
 
 #main-nav .icon{
