@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #D5D5D5;
-    color: #675F5C;
+    color: #544B49;
 }
 #makeMeScrollable div.scrollableArea *
 {
@@ -36,7 +36,7 @@ body {
   bottom: 0px;
   height: 40px;
   z-index: -99999999;
-  border-top: solid 1px #675F5C;
+  border-top: solid 1px #544B49;
 }
 
 #footer .content{
@@ -57,11 +57,14 @@ p {
 #logo
 {
   font-family: 'Bellerose', sans-serif;
-  font-size: 32px;
+  font-size: 40px;
+  line-height: 45px;
   margin-left: 24px;
   position: absolute;
   top: 0px;
   left: 0px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
 }
 
 .inline-image{
@@ -87,14 +90,15 @@ p {
 
 .nav li{
   font-family: 'Bellerose', sans-serif;
+  font-weight: 100;
   float: left;
   list-style: none;
   margin-right: 8px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .nav a {
-  color: #675F5C;
+  color: #544B49;
   text-decoration: none;
 }
 
