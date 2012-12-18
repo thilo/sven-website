@@ -27,6 +27,9 @@ body {
 #header
 {
   height: 87px;
+  border-bottom: 2px solid #231F1B;
+  background-image: url('images/nav_bg.png');
+  background-repeat: repeat-x;
 }
 
 #footer
@@ -88,19 +91,26 @@ p {
   max-width: 800px;
 }
 
+#main-nav li{
+  float: left;
+}
+
+#main-nav a{
+  color: #544B49;
+}
+
 .nav li{
   font-family: 'Bellerose', sans-serif;
   font-weight: 100;
-  float: left;
   list-style: none;
   margin-right: 8px;
   font-size: 20px;
 }
 
 .nav a {
-  color: #544B49;
   text-decoration: none;
 }
+
 
 .nav a:hover {
   text-decoration: underline;
@@ -108,10 +118,34 @@ p {
 
 #subnav {
   position: absolute;
-  top: 40px;
-  right: 24px;
-  float: right;
+  top: 8px;
+  left: 440px;
+  float: left;
 }
+#subnav ul {
+  float: left;
+}
+
+#subnav h3 {
+  font-size: 24px;
+  font-weight: 100;
+  text-transform: lowercase;
+  float: left;
+  color: #FDFDFD;
+  line-height: 24px;
+  height: 24px;
+}
+#subnav a{
+  color: #FDFDFD;
+}
+
+#subnav a, #subnav li{
+  line-height: 24px;
+  height: 24px;
+  font-size: 24px;
+  display: block
+}
+
 
 #main-nav{
   position: absolute;
