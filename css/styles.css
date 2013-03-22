@@ -16,6 +16,11 @@ body {
     background-color: #D5D5D5;
     
 }
+
+#makeMeScrollable {
+  height: 690px;
+  overflow: hidden;
+}
 #makeMeScrollable div.scrollableArea *
 {
   position: relative;
