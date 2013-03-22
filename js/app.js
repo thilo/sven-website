@@ -10,25 +10,12 @@ $(function() {
     $scrollable.smoothDivScroll("hideHotSpotBackgrounds");
   });
 
-  if($("#gallery-info").length > 0){
-    $("#slider").on( "slide slidechange", function( event, ui ) {
-      console.log(ui.handle);
-      leftOffset = ui.handle.offsetLeft;
-      $("#year").css('left', leftOffset);
-    });
-    var $galleryInfo = $("#gallery-info");
-    $( "#slider" ).slider({
-    value: $galleryInfo.data("start-year"),
-    min: $galleryInfo.data("start-year"),
-    max: $galleryInfo.data("end-year"),
-    step: 1,
-    slide: function(event, ui) {
-      $("#year").html(ui.value);
-      if($("#y_" + ui.value).length > 0){
-        $("#makeMeScrollable").smoothDivScroll("scrollToElement", "id", "y_" + ui.value);
-      }
-    }
+  $("a.phase").bind("click", function(){
+    $("#makeMeScrollable").smoothDivScroll("scrollToElement", "id", "y_" + this.target);
+    return(false);
   });
-  $("#year").html($("#slider").slider("value"));
-  }
+  
+  
+  $scrollable.smoothDivScroll("getAjaxContent", "part2.html", "addLast");
+  
 });

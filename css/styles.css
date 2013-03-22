@@ -12,8 +12,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #D5D5D5;
     color: #544B49;
+    background-color: #D5D5D5;
+    
 }
 #makeMeScrollable div.scrollableArea *
 {
@@ -34,11 +35,14 @@ body {
 
 #footer
 {
-  position: absolute;
+/*  position: absolute;*/
   width: 100%;
-  bottom: 0px;
-  height: 40px;
+  height: 36px;
+  overflow: hidden;
+  top: 778px;
   z-index: 99999999;
+  background-image: url('images/footer_bg.jpg');
+  background-repeat: repeat;
 }
 
 #footer .content{
@@ -134,15 +138,13 @@ p {
   line-height: 24px;
   height: 24px;
 }
-#subnav a{
-  color: #FDFDFD;
-}
 
 #subnav a, #subnav li{
   line-height: 24px;
   height: 24px;
-  font-size: 24px;
-  display: block
+  font-size: 22px;
+  color: #FDFDFD;
+  
 }
 
 
