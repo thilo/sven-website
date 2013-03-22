@@ -15,7 +15,7 @@ $(function() {
     return(false);
   });
   
-  
-  $scrollable.smoothDivScroll("getAjaxContent", "part2.html", "addLast");
-  
+  $(window).load(function () {
+    $scrollable.smoothDivScroll("getAjaxContent", "part2.html", "addLast");
+  });
 });
