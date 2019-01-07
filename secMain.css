@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    
+    background-image: url("foto/logo/homebild.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 40px;
+    display: inline-block;
+    text-align: right;
+}
+div{
+    font-family: Trebuchet MS;
+}
+li {
+    float: right;
+    margin: 17px;
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+a:link {
+    text-decoration: none;
+    color: rgb
+}
+
+a:visited {
+    text-decoration: none;
+    color: #262626;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #262626;
+}
+
+a:active {
+    text-decoration: none;
+    color: #262626;
+}
+.logo{
+    width: 13%
+}
+#topper{
+    height: 20%;
+    width: 100%;
+}

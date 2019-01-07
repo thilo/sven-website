@@ -1,6 +1,36 @@
----
-  layout: gallery
----
-<img src="images/gallery/hostile-takeover.jpg" alt="Hostile Takeover" id="startAtMe" />
-<img src="images/gallery/papgei.jpg" alt="Demo image" />
-<img src="images/gallery/sealand.jpg" alt="Demo image" />
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Künsler Sven Ballenthin">
+        <meta name="keywords" content="Sven,Ballenthin,Künstler,Kunst,Ausstellung,artist,Art">
+        <meta name="author" content="oxtech.de">
+        <meta name="robots" content="all" />
+        <title>Artist Sven Ballenthin</title>
+        <link rel="stylesheet" type="text/css" href="main.css" media="all" >
+    </head>
+    <body>
+        <img src="foto/logo/startseite logo.jpg" id="topperlogo"style="z-index: 30;position: absolute; width: 100%;">
+        <!--Nav-->
+        <div class="nav"><img style="float:left" class="logo" src="foto/logo/logominischwarz.jpg">
+            <ul>
+                <li><a href="paintings.html">Paintings</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main" >
+            <img alt="Sven Ballenthin" src="foto/logo/homebild.jpg" style="width: 100%; padding-top: 30px;">
+        </div>
+
+        <script>
+            $(document).ready(function () {
+
+                    $("#topperlogo").fadeOut(4500);
+            });
+        </script>
+    </body>
+</html>

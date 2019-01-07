@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("foto/logo/startseite logo geklickt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 40px;
+    display: inline-block;
+    text-align: right;
+}
+div{
+    color: grey;
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+li {
+    float: right;
+    margin: 17px;
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+a:link {
+    text-decoration: none;
+    color: #262626;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #262626;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #262626;
+}
+
+a:active {
+    text-decoration: none;
+    color: #262626;
+}
+.logo{
+    width: 13%
+}
+#topper{
+    height: 20%;
+    width: 100%;
+}
+.maincontact{
+    align-content: center;
+}
